@@ -6,12 +6,8 @@ int main() {
     originalNum = num;
 
     while (originalNum != 0) {
-       // remainder contains the last digit
         remainder = originalNum % 10;
-        
-       
-        
-       // removing last digit from the orignal number
+       result+= remainder * remainder * remainder;  
        originalNum /= 10;
     }
 
@@ -19,6 +15,5 @@ int main() {
         printf("%d is an Armstrong number.", num);
     else
         printf("%d is not an Armstrong number.", num);
-
     return 0;
 }
